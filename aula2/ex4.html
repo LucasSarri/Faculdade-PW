@@ -4,49 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EX 4</title>
+    <style>
+        body {
+            color: blue;
+        }
+        .margemPreta {
+            border: 1px ridge black;
+        }
+        .legenda {
+            caption-side: bottom;
+        }
+        .fundoAmarelo {
+            background-color: yellow;
+        }
+    </style>
 </head>
 <body>
-    <table style="display: flex; background-color: yellow; color: blue;">
+    <table class="margemPreta legenda">
         <tr>
-            <th colspan="3">Demografia</th>
+            <th rowspan="2" colspan="2" class="margemPreta"></th>
+            <th colspan="3" class="margemPreta fundoAmarelo">Demografia</th>
         </tr>
         <tr>
-            <th>Homens</th>
-            <th>Mulheres</th>
-            <th>Professor</th>
+            <th class="margemPreta fundoAmarelo">Homens</th>
+            <th class="margemPreta fundoAmarelo">Mulheres</th>
+            <th class="margemPreta fundoAmarelo">Professor</th>
         </tr>
         <tr>
-            <td rowspan="5">Turmas</td>
+            <td rowspan="5" class="margemPreta fundoAmarelo">Turmas</td>
         </tr>
         <tr>
-            <th>A</th>
-            <td>20</td>
-            <td>5</td>
-            <td>Carlos<br>Alberto</td>
+            <th class="margemPreta fundoAmarelo">A</th>
+            <td class="margemPreta fundoAmarelo">20</td>
+            <td class="margemPreta fundoAmarelo">5</td>
+            <td class="margemPreta fundoAmarelo">Carlos<br>Alberto</td>
         </tr>
         <tr>
-            <th>B</th>
-            <td>21</td>
-            <td>3</td>
-            <td>idem</td>
+            <th class="margemPreta fundoAmarelo">B</th>
+            <td class="margemPreta fundoAmarelo">21</td>
+            <td class="margemPreta fundoAmarelo">3</td>
+            <td class="margemPreta fundoAmarelo">idem</td>
         </tr>
         <tr>
-            <th>C</th>
-            <td>25</td>
-            <td>2</td>
-            <td>Felipe<br>Zanini</td>
+            <th class="margemPreta fundoAmarelo">C</th>
+            <td class="margemPreta fundoAmarelo">25</td>
+            <td class="margemPreta fundoAmarelo">2</td>
+            <td class="margemPreta fundoAmarelo">Felipe<br>Zanini</td>
         </tr>
         <tr>
-            <th>D</th>
-            <td>20</td>
-            <td>0</td>
-            <td>idem</td>
+            <th class="margemPreta fundoAmarelo">D</th>
+            <td class="margemPreta fundoAmarelo">20</td>
+            <td class="margemPreta fundoAmarelo">0</td>
+            <td class="margemPreta fundoAmarelo">idem</td>
         </tr>
         <tr>
-            <th>Total</th>
-            <td>86</td>
-            <td>4</td>
-            <td>2</td>
+            <th colspan="2" class="margemPreta fundoAmarelo">Total</th>
+            <td class="margemPreta fundoAmarelo">86</td>
+            <td class="margemPreta fundoAmarelo">4</td>
+            <td class="margemPreta fundoAmarelo">2</td>
         </tr>
         <caption>Tabela 1. Estatísticas</caption>
     </table>
