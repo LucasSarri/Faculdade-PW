@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="desafio.css">
+	<title>Desafio</title>
+</head>
+<body>
+	<h1>Localização do Usuário</h1>
+	<button id="obterLocalizacao">Obter Localização</button>
+	<p id="latitude"></p>
+	<p id="longitude"></p>
+	
+	<script>
+	    var obterLocalizacao = document.getElementById("obterLocalizacao");
+
+        function mostrarLocalizacao(position) {
+            var latitude = position.coords.latitude;
+            var longitude = position.coords.longitude;
+    
+            document.getElementById("latitude").innerHTML = "Latitude: " + latitude;
+            document.getElementById("longitude").innerHTML = "Longitude: " + longitude;
+        }
+
+        function obterLocalizacaoHandler() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(mostrarLocalizacao);
+            } else {
+                alert("Geolocalização não é suportada neste navegador.");
+            }
+        }
+
+        obterLocalizacao.addEventListener("click", obterLocalizacaoHandler);
+	</script>
+</body>
+</html>

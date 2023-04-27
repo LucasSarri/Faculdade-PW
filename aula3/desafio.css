@@ -1,0 +1,17 @@
+body {
+    background-color: whitesmoke;
+    text-align: center;
+    font-family: 'Courier New';
+    color: rgb(68, 68, 68);
+}
+
+h1 {
+    font-size: 4em;
+}
+
+button {
+    background-color: aquamarine;
+    width: 200px;
+    height: 80px;
+    border-radius: 5%;
+}

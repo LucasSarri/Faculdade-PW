@@ -1,0 +1,26 @@
+body {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content:space-around;
+}
+
+ul, ol {
+    border: 1px solid black;
+    border-radius: 5%;
+}
+
+#discos {
+    list-style-type: disc;
+}
+
+#circulos {
+    list-style-type: circle;
+}
+
+#quadrados {
+    list-style-type: square;
+}
+
+#sEstilo {
+    list-style-type: none;
+}
