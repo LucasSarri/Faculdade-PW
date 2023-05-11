@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+
+.centralizaElementos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+li {
+    margin-right: 5%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a :hover {
+    text-decoration: none;
+    color: black;
+}
+
+iframe {
+    background-color: black;
+}
+
+#main {
+    margin-top: 10%;
+}
+
+#footer {
+    flex-direction: column;
+    margin-right: 3%;
+    margin-top: 10%;
+}

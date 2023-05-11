@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX8</title>
+    <link rel="stylesheet" href="ex8.css">
+    <script>
+        function mudarExibicao ()
+        {
+            const imagem = document.getElementById("imagem");
+            const botao = document.getElementById("botao");
+
+            if (imagem.className == "") {
+                imagem.className = "escondido";
+                botao.innerHTML = "Exibir";
+            }
+            else {
+                imagem.className = "";
+                botao.innerHTML = "Ocultar";
+            }
+        }
+    </script>
+</head>
+<body>
+    <main>
+        <img src="images.jpg" alt="" id="imagem">
+        <button id="botao" onclick="mudarExibicao()">Ocultar</button>
+    </main>
+</body>
+</html>

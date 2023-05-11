@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    display: flex;
+    background-color: whitesmoke;
+}
+
+main {
+    width: 70%;
+}
+
+aside {
+    margin-left: 15%;
+    width: 25%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
