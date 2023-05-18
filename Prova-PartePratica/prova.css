@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ddd;
+    font-family: "Helvetica Neue";
+    line-height: 1,5;
+}
+
+main {
+    margin-top: 10px;
+    background-color: white;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+main div {
+    margin-left: 2.5%;
+}
+
+main div h2 {
+    color: #555;
+}
+
+header, footer, nav {
+    background-color: #555;
+    color: #eee;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    text-align: center;
+    margin: 5px 0 0 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: lightgray;
+    text-decoration: none;
+}
