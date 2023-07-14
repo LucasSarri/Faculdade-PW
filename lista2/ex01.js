@@ -5,22 +5,17 @@
 
 function ordenaCaracteres()
 {
-    let sequencia = prompt("Informe uma sequência de números para ordenação");
-    let novaSeq = [];
-    for(let i = 0; i<sequencia.length; i++) 
+    const numeros = prompt("Digite uma sequência de números separados por espaço:").split(" ");
+
+    let numInt = [];
+    for(let i = 0; i < numeros.length; i++)
     {
-        min = i;
-        for(let j = i+1; j<sequencia.length; j++)
-        {
-            let elemento1 = parseInt(sequencia[j]);
-            let elemento2 = parseInt(sequencia[min]);
-            if(elemento1 < elemento2)
-            {
-                min = j;
-            }
-        }
-        novaSeq.push(sequencia[min]);
+        numInt.push(parseInt(numeros[i]));
     }
-    alert("A sequência original é: "+sequencia);
-    alert("A nova sequência é: "+novaSeq);
+
+    const numOrd = numInt.sort((a, b) => a - b);
+   
+    alert("Sequência original: "+numInt);
+    alert("Sequência dos números ordenados: "+numOrd);
 }
+  
